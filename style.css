@@ -184,11 +184,13 @@ nav.index-nav.collapsed .main-menu li {
 nav.index-nav.collapsed ul.submenu {
   display: none;
   position: absolute;
-  left: 100%;
-  top: 0;
+  left: 0;
+  top: 100%;
+  min-width: 180px;
   background-color: rgba(31, 31, 31, 0.95);
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  z-index: 1000;
   list-style-position: inside;
 }
 

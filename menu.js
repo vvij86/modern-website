@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('nav.index-nav .main-menu li > a').forEach(a => {
+  // Apply tooltips only for top-level menu items
+  document.querySelectorAll('nav.index-nav .main-menu > li > a').forEach(a => {
     const text = a.textContent.trim();
     a.setAttribute('data-tooltip', text);
     a.setAttribute('title', text);
@@ -28,16 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const nav = document.querySelector('nav.index-nav');
   if (nav) {
-    // start with the navigation collapsed
-    nav.classList.add('collapsed');
-    document.body.classList.add('collapsed-nav');
+    // Restore previous nav state if available
+    const collapsedStored = localStorage.getItem('navCollapsed') === 'true';
+    nav.classList.toggle('collapsed', collapsedStored);
+    document.body.classList.toggle('collapsed-nav', collapsedStored);
   }
 
   const toggleBtn = document.getElementById('toggle-nav');
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
-      nav.classList.toggle('collapsed');
-      document.body.classList.toggle('collapsed-nav');
+      const collapsed = nav.classList.toggle('collapsed');
+      document.body.classList.toggle('collapsed-nav', collapsed);
+      localStorage.setItem('navCollapsed', collapsed);
     });
   }
 });
