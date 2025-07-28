@@ -51,7 +51,10 @@ nav ul li ul.submenu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #1f1f1f;
+  /* Use a slightly translucent background so submenus
+     stand out from the main navigation without appearing
+     fully transparent. */
+  background-color: rgba(31, 31, 31, 0.95);
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   list-style: disc;
