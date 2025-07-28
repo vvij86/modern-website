@@ -147,11 +147,10 @@ nav.index-nav button.toggle-nav {
 
 nav.index-nav.collapsed {
   width: 60px;
-  overflow: visible; /* allow logo to keep its size */
 }
 
 nav.index-nav.collapsed a.logo img {
-  width: 180px;
+  width: 100%;
   max-width: none;
 }
 
