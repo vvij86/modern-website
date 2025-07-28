@@ -224,8 +224,8 @@ nav.index-nav.collapsed .main-menu li a:hover::after {
 }
 
 main {
-  max-width: 800px;
-  margin: 2rem auto;
+  width: 100%;
+  margin: 2rem 0;
   padding: 0 1rem;
   flex: 1;
 }
@@ -344,7 +344,7 @@ h2 {
   }
 
   main {
-    margin: 1rem auto;
+    margin: 1rem 0;
     padding: 0 1rem;
   }
 }
@@ -397,7 +397,7 @@ h2 {
   }
 
   main {
-    max-width: 1000px;
+    width: 100%;
   }
 
   .hero {
