@@ -242,8 +242,9 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 900;
-  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
-  color: #fff;
+  /* Darker gradient to better match the overall dark theme */
+  background: linear-gradient(90deg, #333 0%, #111 100%);
+  color: #f0f0f0;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
@@ -251,6 +252,7 @@ h2 {
   margin: 0;
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #444;
 }
 @media (max-width: 600px) {
   nav .container {
