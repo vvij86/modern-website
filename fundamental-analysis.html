@@ -11,21 +11,64 @@
   <div class="container">
     <a class="logo" href="index.html">AI Portal</a>
     <ul class="main-menu">
-      <li class="has-submenu"><a href="#">AI Platform</a>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="user-management.html">User Management</a></li>
+      <li class="has-submenu"><a href="data-collection.html">Data Collection</a>
         <ul class="submenu">
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="user-management.html">User Management</a></li>
-          <li><a href="data-collection.html">Data Collection</a></li>
-          <li><a href="financial-modeling.html">Financial Modeling</a></li>
-          <li><a href="fundamental-analysis.html">Fundamental Analysis</a></li>
-          <li><a href="quantitative-analysis.html">Quantitative Analysis</a></li>
-          <li><a href="portfolio-construction.html">Portfolio Construction</a></li>
-          <li><a href="risk-management.html">Risk Management</a></li>
-          <li><a href="trading.html">Trading</a></li>
-          <li><a href="performance-analysis.html">Performance Analysis</a></li>
+          <li><a href="data-collection.html#scrape">Scrape websites</a></li>
+          <li><a href="data-collection.html#structured">Ingest structured data from internal DBs</a></li>
+          <li><a href="data-collection.html#unstructured">Ingest unstructured data</a></li>
         </ul>
       </li>
-      <li class="has-submenu"><a href="#">About AI</a>
+      <li class="has-submenu"><a href="financial-modeling.html">Financial Modeling</a>
+        <ul class="submenu">
+          <li><a href="financial-modeling.html#forecasts">Create financial forecasts</a></li>
+          <li><a href="financial-modeling.html#kpi">Forecast KPIs</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu"><a href="fundamental-analysis.html">Fundamental Analysis</a>
+        <ul class="submenu">
+          <li><a href="fundamental-analysis.html#research">Create basic research</a></li>
+          <li><a href="fundamental-analysis.html#views">Summarize sell-side and investor views</a></li>
+          <li><a href="fundamental-analysis.html#news">Read news</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu"><a href="quantitative-analysis.html">Quantitative Analysis</a>
+        <ul class="submenu">
+          <li><a href="quantitative-analysis.html#factors">Find factors</a></li>
+          <li><a href="quantitative-analysis.html#test">Test factors</a></li>
+          <li><a href="quantitative-analysis.html#models">Create models</a></li>
+          <li><a href="quantitative-analysis.html#screen">Screen stocks</a></li>
+          <li><a href="quantitative-analysis.html#predict">Predict returns</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu"><a href="portfolio-construction.html">Portfolio Construction</a>
+        <ul class="submenu">
+          <li><a href="portfolio-construction.html#current">Analyze current portfolio</a></li>
+          <li><a href="portfolio-construction.html#philosophy">Apply investment philosophy</a></li>
+          <li><a href="portfolio-construction.html#optimize">Optimize portfolio</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu"><a href="risk-management.html">Risk Management</a>
+        <ul class="submenu">
+          <li><a href="risk-management.html#bear">Provide bear case</a></li>
+          <li><a href="risk-management.html#challenge">Challenge portfolio</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu"><a href="trading.html">Trading</a>
+        <ul class="submenu">
+          <li><a href="trading.html#liquidity">Source liquidity</a></li>
+          <li><a href="trading.html#impact">Determine market impact</a></li>
+          <li><a href="trading.html#schedule">Optimize trading schedule</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu"><a href="performance-analysis.html">Performance Analysis</a>
+        <ul class="submenu">
+          <li><a href="performance-analysis.html#attribution">Run performance attribution</a></li>
+          <li><a href="performance-analysis.html#trends">Analyze trends</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu"><a href="#">About Us</a>
         <ul class="submenu">
           <li><a href="index.html#vision">Our Vision</a></li>
           <li><a href="index.html#mission">Our Mission</a></li>
@@ -37,9 +80,9 @@
   <main>
     <h1>Fundamental Analysis</h1>
     <ul>
-      <li>Create basic research</li>
-      <li>Summarize sell-side and investor views</li>
-      <li>Read news</li>
+      <li id="research">Create basic research</li>
+      <li id="views">Summarize sell-side and investor views</li>
+      <li id="news">Read news</li>
     </ul>
   </main>
 </body>
