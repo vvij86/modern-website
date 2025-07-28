@@ -4,21 +4,39 @@ document.addEventListener('DOMContentLoaded', () => {
     a.setAttribute('data-tooltip', text);
     a.setAttribute('title', text);
   });
+
   document.querySelectorAll('li.has-submenu > a').forEach(anchor => {
     anchor.addEventListener('click', event => {
       const parent = anchor.parentElement;
       const isOpen = parent.classList.contains('open');
+
+      // close any other open submenu
+      document.querySelectorAll('li.has-submenu.open').forEach(item => {
+        if (item !== parent) {
+          item.classList.remove('open');
+        }
+      });
+
       if (!isOpen) {
         event.preventDefault();
+        parent.classList.add('open');
+      } else {
+        parent.classList.remove('open');
       }
-      parent.classList.toggle('open');
     });
   });
+
+  const nav = document.querySelector('nav.index-nav');
+  if (nav) {
+    // start with the navigation collapsed
+    nav.classList.add('collapsed');
+    document.body.classList.add('collapsed-nav');
+  }
 
   const toggleBtn = document.getElementById('toggle-nav');
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
-      document.querySelector('nav.index-nav').classList.toggle('collapsed');
+      nav.classList.toggle('collapsed');
       document.body.classList.toggle('collapsed-nav');
     });
   }
