@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #111;
   color: #e5e5e5;
 }
@@ -21,6 +24,7 @@ nav a.logo {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 nav ul {
   list-style: none;
@@ -47,9 +51,10 @@ nav ul li ul.submenu {
   top: 100%;
   left: 0;
   background-color: #1f1f1f;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 4px;
   list-style: disc;
+  list-style-position: inside;
 }
 nav ul li:hover ul.submenu {
   display: flex;
@@ -64,7 +69,7 @@ nav ul li ul.submenu li a {
 nav.index-nav .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 nav.index-nav .main-menu {
@@ -75,7 +80,7 @@ nav.index-nav .main-menu {
 }
 @media (max-width: 600px) {
   nav.index-nav .container {
-    align-items: center;
+    align-items: flex-start;
   }
   nav.index-nav .main-menu {
     flex-direction: column;
@@ -112,6 +117,8 @@ h2 {
   nav ul li ul.submenu {
     position: static;
     margin-left: 1rem;
+    padding: 0.5rem 1.5rem;
+    list-style-position: inside;
   }
 }
 .breadcrumb {
@@ -157,4 +164,13 @@ h2 {
 .cta-button:hover {
   background-color: #2575fc;
   color: #fff;
+}
+
+.site-footer {
+  background-color: #1f1f1f;
+  color: #b0b0b0;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  font-size: 0.875rem;
 }
