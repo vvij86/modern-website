@@ -137,6 +137,41 @@ nav.index-nav ul li ul.submenu {
   margin-left: 1rem;
 }
 
+nav.index-nav button.toggle-nav {
+  background: none;
+  border: none;
+  color: #e5e5e5;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+nav.index-nav.collapsed {
+  width: 60px;
+}
+
+body.collapsed-nav {
+  margin-left: 60px;
+}
+
+nav.index-nav.collapsed .container {
+  align-items: center;
+}
+
+nav.index-nav.collapsed .main-menu li a {
+  font-size: 0;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+nav.index-nav.collapsed .main-menu li a i {
+  font-size: 1.25rem;
+  margin-right: 0;
+}
+
+nav.index-nav.collapsed ul.submenu {
+  display: none;
+}
+
 main {
   max-width: 800px;
   margin: 2rem auto;
@@ -154,10 +189,15 @@ h2 {
 }
 
 .site-title {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background-color: #111;
   text-align: center;
   font-size: 1.75rem;
   font-weight: bold;
   margin: 1rem 0;
+  padding: 0.5rem 0;
 }
 @media (max-width: 600px) {
   nav .container {

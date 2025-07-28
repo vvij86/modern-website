@@ -9,4 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
       parent.classList.toggle('open');
     });
   });
+
+  const toggleBtn = document.getElementById('toggle-nav');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      document.querySelector('nav.index-nav').classList.toggle('collapsed');
+      document.body.classList.toggle('collapsed-nav');
+    });
+  }
 });
