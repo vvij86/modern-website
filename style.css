@@ -152,6 +152,7 @@ nav.index-nav.collapsed {
 
 nav.index-nav.collapsed a.logo img {
   width: 180px;
+  max-width: none;
 }
 
 body.collapsed-nav {
