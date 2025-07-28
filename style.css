@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 html, body {
@@ -245,9 +246,10 @@ h2 {
   /* Darker gradient to better match the overall dark theme */
   background: linear-gradient(90deg, #333 0%, #111 100%);
   color: #f0f0f0;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
   text-align: center;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.05em;
   margin: 0;
   padding: 1rem 0;
