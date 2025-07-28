@@ -43,4 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('navCollapsed', collapsed);
     });
   }
+
+  // Close any open submenu when clicking outside the navigation
+  document.addEventListener('click', event => {
+    if (!event.target.closest('nav.index-nav')) {
+      document.querySelectorAll('li.has-submenu.open').forEach(item => {
+        item.classList.remove('open');
+      });
+    }
+  });
 });
