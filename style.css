@@ -60,6 +60,28 @@ nav ul li ul.submenu li {
 nav ul li ul.submenu li a {
   color: #e5e5e5;
 }
+/* Two-line centered navigation for consistent layout */
+nav.index-nav .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+nav.index-nav .main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  nav.index-nav .container {
+    align-items: center;
+  }
+  nav.index-nav .main-menu {
+    flex-direction: column;
+  }
+}
+
 main {
   max-width: 800px;
   margin: 2rem auto;
