@@ -120,7 +120,7 @@ nav.index-nav a.logo {
   text-align: center;
 }
 nav.index-nav a.logo img {
-  max-width: 100%;
+  max-width: 150px;
   height: auto;
 }
 nav.index-nav .main-menu {
@@ -128,6 +128,10 @@ nav.index-nav .main-menu {
   flex-direction: column;
   width: 100%;
   gap: 0.5rem;
+}
+nav.index-nav .main-menu > li > a {
+  font-size: 0.875rem;
+  white-space: nowrap;
 }
 nav.index-nav ul li {
   width: 100%;
