@@ -17,6 +17,9 @@ body {
 nav {
   background-color: #1f1f1f;
   box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 nav .container {
   padding: 1rem;
@@ -211,4 +214,29 @@ h2 {
     margin: 1rem auto;
     padding: 0 1rem;
   }
+}
+
+/* Gallery layout inspired by Framer's Landio template */
+.gallery_container__C8eB1 {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+.gallery_twoRowsGrid__7Xmm9 {
+  grid-auto-rows: 1fr;
+}
+.gallery_tabletColumns__cGLny {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 768px) {
+  .gallery_tabletColumns__cGLny {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.gallery_container__C8eB1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
 }
