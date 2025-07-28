@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-left: 220px;
 }
 
 /* Generic wrapper to constrain content width */
@@ -93,26 +94,45 @@ nav ul li ul.submenu > li > a {
 nav ul li ul.submenu > li > a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* Align logo and menu in a single row on larger screens */
+/* Sidebar layout */
+nav.index-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 nav.index-nav .container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  height: 100%;
+}
+nav.index-nav a.logo {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+nav.index-nav a.logo img {
+  max-width: 100%;
+  height: auto;
 }
 nav.index-nav .main-menu {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
 }
-@media (max-width: 600px) {
-  nav.index-nav .container {
-    align-items: flex-start;
-  }
-  nav.index-nav .main-menu {
-    flex-direction: column;
-  }
+nav.index-nav ul li {
+  width: 100%;
+}
+nav.index-nav ul li ul.submenu {
+  position: static;
+  margin-left: 1rem;
 }
 
 main {
@@ -131,6 +151,12 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+.site-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
 @media (max-width: 600px) {
   nav .container {
     flex-direction: column;
