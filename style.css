@@ -24,7 +24,7 @@ nav a.logo {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 nav ul {
   list-style: none;
@@ -65,12 +65,12 @@ nav ul li ul.submenu li {
 nav ul li ul.submenu li a {
   color: #e5e5e5;
 }
-/* Two-line centered navigation for consistent layout */
+/* Align logo and menu in a single row on larger screens */
 nav.index-nav .container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 nav.index-nav .main-menu {
   display: flex;
