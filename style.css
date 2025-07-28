@@ -103,3 +103,36 @@ h2 {
 .breadcrumb a:hover {
   text-decoration: underline;
 }
+
+.hero {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #2575fc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #2575fc;
+  color: #fff;
+}
