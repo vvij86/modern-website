@@ -29,19 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const nav = document.querySelector('nav.index-nav');
   if (nav) {
-    // Restore previous nav state if available
-    const collapsedStored = localStorage.getItem('navCollapsed') === 'true';
-    nav.classList.toggle('collapsed', collapsedStored);
-    document.body.classList.toggle('collapsed-nav', collapsedStored);
-  }
-
-  const toggleBtn = document.getElementById('toggle-nav');
-  if (toggleBtn) {
-    toggleBtn.addEventListener('click', () => {
-      const collapsed = nav.classList.toggle('collapsed');
-      document.body.classList.toggle('collapsed-nav', collapsed);
-      localStorage.setItem('navCollapsed', collapsed);
-    });
+    // Always start collapsed; no toggle
+    nav.classList.add('collapsed');
+    document.body.classList.add('collapsed-nav');
   }
 
   // Close any open submenu when clicking outside the navigation
