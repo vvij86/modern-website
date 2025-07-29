@@ -360,12 +360,7 @@ h2 {
   grid-auto-rows: 1fr;
 }
 .gallery_tabletColumns__cGLny {
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 768px) {
-  .gallery_tabletColumns__cGLny {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(2, 1fr);
 }
 .gallery_container__C8eB1 img {
   width: 100%;
