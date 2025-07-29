@@ -5,3 +5,8 @@ Open `index.html` in a browser to explore the dashboard, user management page,
 and eight analysis modules covering data collection through performance analysis.
 The landing page now features a colorful hero section inspired by modern
 templates like Framer's Landio.
+
+## Navigation Performance
+
+Menu links now prefetch their target pages when hovered. This warms the browser
+cache so that sub pages open more quickly after a click.

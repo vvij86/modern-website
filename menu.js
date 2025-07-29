@@ -6,6 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
     a.setAttribute('title', text);
   });
 
+  // Prefetch sub page content on hover to speed up navigation
+  document.querySelectorAll('nav.index-nav .submenu a').forEach(link => {
+    let prefetched = false;
+    link.addEventListener('mouseenter', () => {
+      if (!prefetched) {
+        const prefetch = document.createElement('link');
+        prefetch.rel = 'prefetch';
+        prefetch.href = link.href;
+        prefetch.as = 'document';
+        document.head.appendChild(prefetch);
+        prefetched = true;
+      }
+    });
+  });
+
   document.querySelectorAll('li.has-submenu > a').forEach(anchor => {
     anchor.addEventListener('click', event => {
       const parent = anchor.parentElement;
